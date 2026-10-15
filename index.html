@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jesus Property Maintenance | Lawn Care in Portage, Indiana</title>
+<meta name="description" content="Owner-operated lawn mowing, edging, hedge trimming, seasonal cleanup and property maintenance for homeowners in Portage and Porter County, Indiana.">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --wheat:#E9D49E;
+    --green:#1F4D2C;
+    --gold:#D9A441;
+    --brick:#8A3324;
+    --ink:#2B2318;
+    --white:#FFFFFF;
+  }
+  *,*::before,*::after{box-sizing:border-box;border-radius:0}
+  html{scroll-behavior:auto}
+  body{
+    margin:0;
+    background:var(--wheat);
+    color:var(--ink);
+    font-family:"Roboto Slab",Georgia,serif;
+    font-size:1.0625rem;
+    line-height:1.75;
+    cursor:auto;
+  }
+  img{display:block;max-width:100%;height:auto}
+  h1,h2,.nav a,.brand{
+    font-family:"Oswald","Archivo Narrow",Arial Narrow,sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.01em;
+    color:var(--green);
+    font-weight:700;
+    line-height:1.02;
+    margin:0;
+  }
+  h1{font-size:clamp(2.4rem,9vw,4.6rem)}
+  h2{font-size:clamp(2rem,6.5vw,3.4rem);margin-bottom:.6rem}
+  h3{font-family:"Roboto Slab",Georgia,serif;font-weight:600;font-size:1.1rem;margin:1.4rem 0 .3rem;color:var(--ink)}
+  p{margin:0 0 1rem;max-width:62ch}
+  a{color:var(--green)}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--brick);outline-offset:2px}
+
+  /* Header */
+  .site-header{
+    background:var(--wheat);
+    padding:.9rem 1.25rem;
+    display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem 1.5rem;
+  }
+  .brand{font-size:1.4rem;text-decoration:none}
+  .nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem 1.2rem}
+  .nav a{font-size:1.05rem;font-weight:600;text-decoration:none}
+  .nav a:hover{color:var(--brick)}
+
+  /* Buttons */
+  .btn{
+    display:inline-block;
+    background:var(--brick);
+    color:var(--white);
+    font-family:"Oswald",Arial Narrow,sans-serif;
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:1.15rem;
+    letter-spacing:.03em;
+    text-decoration:none;
+    padding:.8rem 1.5rem;
+    border:0;
+    cursor:pointer;
+  }
+  .btn:hover,.btn:focus-visible{color:var(--gold)}
+
+  /* Hero */
+  .hero{position:relative}
+  .hero-photo{
+    width:100%;
+    height:62vh;min-height:360px;max-height:720px;
+    object-fit:cover;
+    border:4px solid var(--gold);
+    background:var(--green);
+  }
+  .hero-box{
+    background:var(--gold);
+    padding:1.5rem 1.4rem 1.7rem;
+    margin:-4.5rem 1rem 0;
+    position:relative;
+  }
+  .hero-box p{font-size:1.15rem;margin:.7rem 0 1.2rem;color:var(--ink)}
+
+  /* Brick bands */
+  .band{
+    background:var(--brick);
+    color:var(--white);
+    min-height:80px;
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;
+    padding:1rem 1.25rem;
+    font-weight:600;
+    font-size:1.05rem;
+    margin:0;
+  }
+  .band p{margin:0;max-width:none}
+
+  /* Sections */
+  section{padding:3.5rem 1.25rem}
+  .split{display:grid;gap:1.8rem;max-width:1180px;margin:0 auto;align-items:center}
+  .split img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--green)}
+  .kicker{font-weight:600;color:var(--brick);margin-bottom:.4rem;font-size:1rem}
+  ul.list{padding-left:1.2rem;margin:0 0 1rem}
+  ul.list li{margin-bottom:.35rem}
+
+  .about-text h2{border-top:2px solid var(--brick);padding-top:1rem;display:inline-block}
+
+  /* Gallery */
+  .gallery{max-width:1180px;margin:0 auto}
+  .gallery-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1.5rem}
+  .gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--green)}
+  .gallery-note{background:var(--gold);padding:1.6rem 1.4rem;display:flex;flex-direction:column;justify-content:center}
+  .gallery-note p:last-child{margin-bottom:0}
+
+  /* Contact */
+  .contact{max-width:1180px;margin:0 auto;display:grid;gap:2rem}
+  .rating{font-weight:600;color:var(--green);font-size:1.1rem}
+  form{background:var(--gold);padding:1.5rem 1.3rem}
+  label{display:block;font-weight:600;margin:.9rem 0 .3rem}
+  input,select,textarea{
+    width:100%;font:inherit;font-size:1rem;color:var(--ink);
+    background:var(--white);border:2px solid var(--ink);padding:.6rem .7rem;
+  }
+  textarea{min-height:110px;resize:vertical}
+  form .btn{margin-top:1.2rem}
+  .small{font-size:.92rem}
+
+  /* Footer */
+  footer{background:var(--green);color:var(--white);padding:2.5rem 1.25rem}
+  footer .inner{max-width:1180px;margin:0 auto}
+  footer p{max-width:none}
+  footer strong{font-family:"Roboto Slab",Georgia,serif}
+
+  @media (min-width:860px){
+    .site-header{padding:1rem 2.5rem}
+    .hero-box{position:absolute;left:2.5rem;bottom:-3rem;width:min(40%,520px);margin:0;padding:2rem 2rem 2.2rem}
+    .hero + .band{margin-top:4.5rem}
+    section{padding:5rem 2.5rem}
+    .split{grid-template-columns:1fr 1fr;gap:3.5rem}
+    .split.flip .split-photo{order:2}
+    .gallery-grid{grid-template-columns:1fr 1fr}
+    .contact{grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#top">Jesus Property Maintenance</a>
+  <nav class="nav" aria-label="Main">
+    <ul>
+      <li><a href="#mowing">Mowing</a></li>
+      <li><a href="#hedges">Hedges</a></li>
+      <li><a href="#cleanup">Cleanup</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Free Quote</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <img class="hero-photo"
+      src="https://pixabay.com/get/gce8f21b318d238bee9633fec1d9219e24f85e68e2fe6226788338a154498c60dfe00e6fc8459611d0f789e1ea478cdeed9389cfa323200ad1e3b46c20b618d39_1280.jpg"
+      alt="Lawn mower cutting green grass in a front yard"
+      data-photo-slot="hero"
+      data-photo-query="lawn mower cutting green grass front yard">
+    <div class="hero-box">
+      <h1>Jesus Property Maintenance</h1>
+      <p>Honest lawn care for Portage yards, done by the owner himself.</p>
+      <a class="btn" href="#contact">Call for a Free Quote</a>
+    </div>
+  </div>
+
+  <div class="band"><p>Mowing · Edging · Hedges · Seasonal Cleanup · Property Upkeep — Portage &amp; Porter County</p></div>
+
+  <!-- SERVICE 1 -->
+  <section id="mowing" aria-labelledby="mowing-h">
+    <div class="split">
+      <div class="split-photo">
+        <img src="https://images.pexels.com/photos/5163423/pexels-photo-5163423.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="Lawn edging and trimming along a residential sidewalk"
+          data-photo-slot="service-1"
+          data-photo-query="lawn edging trimming sidewalk residential"
+          loading="lazy">
+      </div>
+      <div>
+        <p class="kicker">Weekly &amp; every-other-week service</p>
+        <h2 id="mowing-h">Lawn Mowing &amp; Edging</h2>
+        <p>A clean cut, straight edges along the walk and driveway, and clippings blown off the hard surfaces before I leave. Same day, same care, every visit.</p>
+        <p>Small residential lots are where the details show, and that's the work I pay closest attention to.</p>
+        <ul class="list">
+          <li>Recurring mowing on a schedule you can count on</li>
+          <li>Edging along sidewalks, drives and beds</li>
+          <li>Line trimming around fences, trees and mailboxes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="band"><p>You deal with the owner — not a call center.</p></div>
+
+  <!-- SERVICE 2 -->
+  <section id="hedges" aria-labelledby="hedges-h">
+    <div class="split flip">
+      <div class="split-photo">
+        <img src="https://images.pexels.com/photos/4920283/pexels-photo-4920283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="Hedge trimming and shrub maintenance in a yard"
+          data-photo-slot="service-2"
+          data-photo-query="hedge trimming shrub maintenance yard"
+          loading="lazy">
+      </div>
+      <div>
+        <p class="kicker">Shrubs, hedges &amp; overgrowth</p>
+        <h2 id="hedges-h">Trimming &amp; Hedge Maintenance</h2>
+        <p>Hedges shaped back to a tidy line, shrubs kept off the siding and windows, and overgrown corners brought back under control.</p>
+        <p>Cuttings are cleaned up and hauled from the beds so the yard looks finished, not just trimmed.</p>
+        <ul class="list">
+          <li>Hedge shaping and squaring</li>
+          <li>Shrub trimming away from the house and walkways</li>
+          <li>Cleanup of all trimmings</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="band"><p>Local to Portage — I know these lots and these seasons.</p></div>
+
+  <!-- SERVICE 3 -->
+  <section id="cleanup" aria-labelledby="cleanup-h">
+    <div class="split">
+      <div class="split-photo">
+        <img src="https://images.pexels.com/photos/3999647/pexels-photo-3999647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="Fall yard cleanup, raking leaves"
+          data-photo-slot="service-3"
+          data-photo-query="fall yard cleanup raking leaves"
+          loading="lazy">
+      </div>
+      <div>
+        <p class="kicker">Spring &amp; fall</p>
+        <h2 id="cleanup-h">Seasonal Yard Cleanup</h2>
+        <p>Northwest Indiana yards take a beating between seasons. In the spring I clear out winter debris and get beds and lawns ready to grow. In the fall I take care of the leaves before they smother the grass.</p>
+        <ul class="list">
+          <li>Leaf raking and removal</li>
+          <li>Bed and border cleanout</li>
+          <li>Sticks, branches and storm debris picked up</li>
+          <li>General property upkeep for homeowners and small landlords</li>
+        </ul>
+        <p class="small">Ask about snow removal during the winter months.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="band"><p>Dependable, personally accountable yard care.</p></div>
+
+  <!-- ABOUT -->
+  <section id="about" aria-labelledby="about-h">
+    <div class="split flip">
+      <div class="split-photo">
+        <img src="https://pixabay.com/get/g6b238fbe0e977d670ab9d37d68f6ef972a6fda13f26aeeff1ba9bb713d85303ed6b2677cc0885c20742958fd5d17608ecc8cf1080d0d8f9a01369c36adb15be7_1280.jpg"
+          alt="Property maintenance worker outdoors"
+          data-photo-slot="about"
+          data-photo-query="property maintenance worker portrait outdoors"
+          loading="lazy">
+      </div>
+      <div class="about-text">
+        <h2 id="about-h">One Owner. One Truck. Your Street.</h2>
+        <p>Jesus Property Maintenance is a one-person operation right here in Portage. There's no franchise behind it and no crew you've never met — when you call, you're talking to the person who will show up and do the work.</p>
+        <p>That means I answer for every lawn I cut. If something isn't right, you tell me, and I make it right. It's simple, honest work, done the way I'd want it done at my own house.</p>
+        <p>I serve homeowners and small landlords in Portage and the nearby Porter and Lake County communities who want a trustworthy local person on a reliable schedule.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="band"><p>Recent work around Portage</p></div>
+
+  <!-- GALLERY -->
+  <section aria-labelledby="gallery-h">
+    <div class="gallery">
+      <h2 id="gallery-h">The Work</h2>
+      <div class="gallery-grid">
+        <img src="https://images.pexels.com/photos/36499028/pexels-photo-36499028.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="Well maintained lawn on a property in Portage, Indiana"
+          data-photo-slot="gallery"
+          data-photo-query="well maintained lawn property Portage Indiana"
+          loading="lazy">
+        <div class="gallery-note">
+          <p><strong>A yard should look cared for, every single week.</strong></p>
+          <p>Even stripes, crisp edges, clean walks. More before-and-after photos from real Portage properties will be added here as the season goes on.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band"><p>Free quotes for Portage homeowners</p></div>
+
+  <!-- CONTACT -->
+  <section id="contact" aria-labelledby="contact-h">
+    <div class="contact">
+      <div>
+        <h2 id="contact-h">Get a Free Quote</h2>
+        <p>Tell me a little about your yard and what you need. I'll get back to you personally with an honest price — no pressure, no upsell.</p>
+        <p class="rating">★★★★★ 5.0 on Google <span class="small">(from our first review — we're just getting started)</span></p>
+        <h3>Based in</h3>
+        <p>3555 Ash St Apt.12<br>Portage, IN 46368</p>
+        <h3>Service area</h3>
+        <p>Portage and nearby Porter County / Northwest Indiana communities.</p>
+      </div>
+      <form action="#" method="post" aria-label="Free quote request">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+        <label for="contact-info">Phone or email</label>
+        <input id="contact-info" name="contact" type="text" required>
+        <label for="addr">Property address</label>
+        <input id="addr" name="address" type="text" autocomplete="street-address">
+        <label for="service">What do you need?</label>
+        <select id="service" name="service">
+          <option>Lawn mowing &amp; edging</option>
+          <option>Trimming &amp; hedge maintenance</option>
+          <option>Seasonal yard cleanup</option>
+          <option>General property maintenance</option>
+          <option>Snow removal</option>
+        </select>
+        <label for="msg">Anything else?</label>
+        <textarea id="msg" name="message"></textarea>
+        <button class="btn" type="submit">Request My Free Quote</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="inner">
+    <p><strong>Jesus Property Maintenance</strong> — Lawn care service</p>
+    <p>3555 Ash St Apt.12, Portage, IN 46368</p>
+    <p>Serving homeowners and small landlords in Portage and the surrounding Porter County / Northwest Indiana area.</p>
+    <p class="small">© 2026 Jesus Property Maintenance. Website sample by Wild Card Creative Co</p>
+  </div>
+</footer>
+
+</body>
+</html>
